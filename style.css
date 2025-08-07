@@ -1,17 +1,17 @@
 
 body{
-    background-color: rgb(122, 91, 231);
+    background-color: rgb(238, 187, 152);
     font-size: 30px;
     justify-content: center;
     color: aliceblue;
 }
 
 nav {
-  background-color: rgb(110, 75, 238);
+  background-color: rgb(219, 147, 98);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 170px;
+  height: 90px;
   padding: 0 20px;
   border-end-end-radius: 30px;
   border-end-start-radius: 30px;
@@ -27,8 +27,8 @@ nav {
 }
 
 nav img {
-  width: 200px;
-  height: 180px;
+  width: 170px;
+  height: 90px;
 }
 
 .content2 {
@@ -45,7 +45,7 @@ nav img {
   display: inline-flex;
   gap: 10px;
   justify-content: center;
-  margin-top: 10px;
+  margin-top:0px;
 }
 
 
