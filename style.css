@@ -1,51 +1,30 @@
-@import url("mediaQueries.css");
+
 
 body{
     background-color: rgb(238, 187, 152);
-    font-size: 30px;
-    justify-content: center;
     color: aliceblue;
-    
 }
 
-nav {
-  background-color: rgb(252, 168, 112);
-  display: flex;
-  font-size: 65px;
-  text-shadow: 7px 7px 3px black;
+nav{
+  background-color: rgb(59, 63, 63);
+  height: 5rem;
+  width: 100%;
+  display: inline-flex;
   justify-content: space-between;
-  height: 84px;
-  padding: 0 20px;
-  border-end-end-radius: 80px;
-  border-end-start-radius: 80px;
-  flex-wrap: wrap; 
-
-   position: fixed;     
-  top: 0;              
-  left: 0;
-  right: 0;      
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: fixed;
+  top: 0;
+}
+#navDiv{
+  font-size: 40px;
+  align-content: center;
 }
 
-nav img {
-  width: 170px;
-  height: 90px;
+#imgD {
+  height: 70px;
+  width: 80px;        
 }
-
-.content2 {
-  flex: 1;
-  text-align: center;
-  margin-left: 20px;
-}
-
-.content2 h2 {
-  margin: 0;
-}
-
-#navDiv {
-  justify-content: center;
-  margin-top:3px;
-}
-
 
 .homeSection{
     
@@ -286,9 +265,9 @@ footer {
   text-decoration: underline;
 }
 
-@media(600px <= width <= 800px){
-    :root {
-        background-color: orange;
-    }
 
+@media (max-width: 600px) {
+    #navDiv{
+        font-size:30px;
+    }
 }
