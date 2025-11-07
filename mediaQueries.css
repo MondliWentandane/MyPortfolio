@@ -1,0 +1,60 @@
+/*==== Media Queries ======*/
+
+@media (max-width: 1200px) {
+    nav{
+        height: 24px;
+    }
+    #navDiv{
+        font-size: 45px;
+        padding-top: 10px;
+    }
+    #imgD {
+        width: 120px;
+        height: 70px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 910px) {
+    nav{
+        height: fit-content;
+    }
+    #navDiv{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    #imgD {
+        width: 110px;
+        height: 60px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 670px) {
+    #navDiv{
+        font-size: 29px;
+        padding-top: 5px;
+    }
+    #imgD {
+        width: 90px;
+        height: 48px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    #navDiv{
+        font-size: 22px;
+        padding-top: 5px;
+    }
+    #imgD {
+        width: 70px;
+        height: 48px;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 410px) {
+    #navDiv{
+        font-size: 18px;
+    }    
+}
