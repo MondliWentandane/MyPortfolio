@@ -271,3 +271,18 @@ footer {
         font-size:30px;
     }
 }
+
+@media (max-width: 430px) {
+  nav{
+    background-color: rgb(59, 63, 63);
+    height: 3.7rem;
+  }
+    #navDiv{
+        font-size:22px;
+    }
+    #imgD {
+      height: 50px;
+      width: 70px; 
+      padding-top: 2%;       
+    }
+}
