@@ -1,12 +1,12 @@
 
 
 body{
-    background-color: rgb(238, 187, 152);
+    background-color: #050a14;
     color: aliceblue;
 }
 
 nav{
-  background-color: rgb(59, 63, 63);
+  background-color: rgba(0, 0, 0, 0.767);
   height: 5rem;
   width: 100%;
   display: inline-flex;
@@ -27,15 +27,23 @@ nav{
 }
 
 .homeSection{
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+                      url('./media/bg/JavaBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    font-size: 24px;
+
+    display: inline-flex;
+    gap: 10%;
     text-align: center;
-  height: fit-content;
-  width: fit-content;
-  border-radius: 40px;
-  display: inline-flex;
-  text-shadow: 3px 3px 3px black;
-    margin-top: 200px;
-    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.homeGreetings{
 
 }
 .homeProfile img{
@@ -65,17 +73,16 @@ nav{
         height: fit-content;
     }
 }
-
+/*==== End of the Home Section, starting the About Section*/
 
 #aboutSection{
-    
    display: inline-flex;
    gap: 30px;
-   width: fit-content;
-  text-shadow: 2px 2px 2px black;
-   margin-top: 20px;
-   margin-left: 50px;
-   border-radius: 30px;
+   width: 100%;
+   height: 35rem;
+   padding-top: 8%;
+   padding-left: 4%;
+   font-size: 23px;
 
 
 }
@@ -87,33 +94,47 @@ nav{
     border-left-style: solid;
 }
 .cards{
-    display: inline-flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-    margin-left: 70px;
-    margin-top: 20px;
-    width: 92%;
-    h3{
-        margin-left: 30px;
-    }
+  background-image: linear-gradient(rgba(1, 1, 21, 0.9), rgba(7, 0, 0, 0.4)),
+                    url(./media//bg//bgWithReact.avif);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-left: 70px;
+  padding-top: 12%;
+  width: 92%;
+  height: 32%;
+  h3{
+      margin-left: 30px;
+  }
 }
 
 #card{
     width: fit-content;
     height: fit-content;
     border-radius: 20px;
-    background-color: rgb(238, 187, 152);
+    background-color: rgba(3, 3, 7, 0.596);
     border-left-style: solid;
-    border-left-width: 5px;
+    border-left-width: 1px;
     border-bottom-style: solid;
-    border-bottom-width: 5px;
-    text-shadow: 5px 5px 5px black;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #fcfcfc2f;
+    backdrop-filter: blur(8px);
 }
 .card2{
     margin-top: 140px;
 }
 .card3{
     margin-top: 320px;
+}
+.theHR{
+  border: 1px solid #fcfcfc2f;
 }
 
 
@@ -127,20 +148,18 @@ nav{
     gap: 20px;
 }
 #skillsLang{
-     display: flex;
+    display: flex;
     gap: 30px;
     flex-wrap: wrap;
     
 }
 
 #skillsLang span{
-    background-color: rgb(216, 163, 127);
+    background-color: rgb(2, 4, 20);
     text-align: center;
     width: 120px;
     height: 40px;
-    border-style: solid;
     border-radius: 80px;
-    border-color: rgb(212, 172, 142);
     font-size: 25px;
 
 }
@@ -149,7 +168,6 @@ nav{
     height: 230px;
     margin-left: 20px;
     border-radius: 17px;
-    border-style: solid;
 }
 
 
