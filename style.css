@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #010305;
+    background-color: #02080e;
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -28,8 +28,10 @@ nav{
 }
 
 .homeSection{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-                      url('./media/bg/JavaBackground.jpg');
+    background-image: linear-gradient(to bottom,
+        rgba(2, 8, 14, 0) 0%,     /* transparent at the top */
+        rgba(2, 8, 14, 1) 100%    /* solid #02080e at the bottom */
+    ),url('./media/bg/JavaBackground.jpg');
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
@@ -92,17 +94,22 @@ nav{
     border-left-style: solid;
 }
 .cards{
-  background-image: linear-gradient(rgba(1, 1, 21, 0.9), rgba(7, 0, 0, 0.3)),
-                    url(./media//bg//bgWithReact.avif);
+  background-image: linear-gradient(
+        to bottom,
+        rgba(2, 8, 14, 1) 0%,     /* solid black at the top */
+        rgba(2, 8, 14, 0) 20%,    /* fully transparent */
+        rgba(2, 8, 14, 0) 80%,    /* transparent middle */
+        rgba(2, 8, 14, 1) 100%    /* solid black at the bottom */
+    ),
+    url('./media/bg/bgWithReact.avif');
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
   display: inline-flex;
   gap: 10px;
   flex-wrap: nowrap;
-  margin-left: 70px;
   padding-top: 12%;
-  width: 92%;
+  width: 100%;
   height: 32%;
   padding-bottom: 5rem;
   h2{
