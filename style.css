@@ -1,5 +1,4 @@
 
-
 body{
     background-color: #02080e;
     color: aliceblue;
@@ -187,21 +186,41 @@ nav{
 #projects {
   padding: 60px 20px;
   text-align: center;
-  height: 50rem;
+  height: fit-content;
 }
-.projects-wrapper {
+/*=== Below is the style for the slide ====*/
+.slider-container {
+  overflow: hidden; /* Hide slides that are off-screen */
+  position: relative;
+  width: 78%;
+  margin-left: 10%;
+  height: fit-content;
+}
+.nav-btn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.slider {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px; /* Add spacing between slides */
+  padding-top: 8%;
+  padding-left: 3%;
 }
 .project-box {
   background-color: rgba(2, 2, 24, 0.377);
-  
-  width: 450px;
+  width: 450px; /* Use min-width instead of width */
+  flex-shrink: 0; /* Prevent slides from shrinking */
   box-shadow: 3px 3px 2.4px 2.4px rgb(28, 14, 233);
-  border-radius: 15px;transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-bottom: 15px;
 }
+/*==== Slider style ends here =====*/
+
 .project-box:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
