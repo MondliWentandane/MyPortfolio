@@ -92,6 +92,10 @@ nav{
     text-align: center;
     margin-left: 20px;
     border-left-style: solid;
+    p{
+      text-align: left;
+      padding-left: 20px;
+    }
 }
 .cards{
   background-image: linear-gradient(
