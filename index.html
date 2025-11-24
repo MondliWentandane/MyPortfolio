@@ -14,10 +14,18 @@
 <body>
     <nav>
       <img src="media/java.png" alt="java" id="imgD">
-          <div id="navDiv">Welcome To My Portfolio</div>
+        <div class="container flex">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
       <img src="media/python.png" alt="python" id="imgD">
     </nav>
-        <section class="homeSection">
+        <section class="homeSection" id="home">
             <div class="homeGreetings">
               <h1>Hi, I'm Mondli (Software Developer)</h1>
               <p>
@@ -43,33 +51,43 @@
 
         
         <main>
-            <section id="aboutSection">
+            <h1 style="text-align: center; font-size: 43px;" id="About">About</h1>
+            <section class="aboutSection" id="about">
+              
                 <span>
                     <h3>Professions</h3>
                       <p>
-                          Hello! I'm a dedicated and motivated Full-Stack Software Developer with experience in building both web and mobile applications. I work with frontend tools like HTML, CSS, JavaScript, TypeScript, React, and React Native, and I develop strong backend systems using Java EE, Servlets, JSP, REST APIs, SQL/PLSQL, and more.
+                          Hello! I'm a dedicated and motivated Full-Stack Software Developer with experience in building both 
+                          web and mobile applications. I work with frontend tools like HTML, CSS, JavaScript, TypeScript, React, 
+                          and React Native, and I develop strong backend systems using Java EE, Servlets, JSP, REST APIs, SQL/PLSQL,
+                          and more.
                       </p>
                 </span>
                 <span>
                     <h3>Abilities</h3>
                       <p>
-                        I enjoy solving real problems through clean code, good design, and modern development practices. I can design responsive UI/UX layouts, build secure and scalable APIs, work with databases, follow the MVC pattern, and collaborate using Agile and Git.
+                        I enjoy solving real problems through clean code, good design, and modern development practices. <br> I can 
+                        design responsive UI/UX layouts, build secure and scalable APIs, work with databases, follow the MVC 
+                        pattern, and collaborate using Agile and Git.
                      </p>
                 </span>
                 <span>
                     <h3>Journey</h3>
                      <p>
-                        My journey has been shaped by strong academic training at TUT and hands-on experience at mLab’s CodeTribe program. My goal is to create modern, efficient, and impactful applications that bring value to users and businesses. I am always learning, improving, and ready to contribute to innovative projects.
+                        My journey has been shaped by strong academic training at TUT and hands-on experience at mLab’s 
+                        CodeTribe program. <br> My goal is to create modern, efficient, and impactful applications that bring 
+                        value to users and businesses. I am always learning, improving, and ready to contribute to innovative 
+                        projects.
                     </p>
                 </span>
                 
             </section>
-            <section style="text-align: center; font-size: 24px;"><h1>Skills</h1></section>
+            <section style="text-align: center; font-size: 24px;" id="skills"><h1>Skills</h1></section>
             <section class="cards">
                 <div class="card1" id="card">
                     <h2>Frontend</h2>
                     <hr class="theHR">
-                    <div id="skills">
+                    <div id="skill">
                         <img src="media/skill1.png" alt="">
                         <div id="skillsLang">
                           <span>UI/UX Design (Figma)</span><span>HTML</span> <span>CSS</span><span>JavaScript</span>
@@ -80,7 +98,7 @@
                 <div class="card2" id="card">
                     <h2>Backend</h2>
                     <hr class="theHR">
-                    <div id="skills">
+                    <div id="skill">
                         <img src="media/skill2.jpeg" alt="">
                         <div id="skillsLang">
                           <span>Java</span> <span>Java EE (Servlets, JSP, EJB, JPA, JPQL)</span>
@@ -92,7 +110,7 @@
                 <div class="card3" id="card">
                     <h2>Database</h2>
                     <hr class="theHR">
-                    <div id="skills">
+                    <div id="skill">
                         <img src="media/skill3.jpg" alt="">
                         <div id="skillsLang">
                           <span>SQL</span> <span>PL/SQL</span><span>Oracle DB</span>
@@ -179,17 +197,16 @@
                 <div class="experience-container">
                   <div class="experience-card">
                     <h3>Computer Science Student – Tshwane University of Technology</h3>
-                    <p>Final-year Computer Science student completing practicals. Gained strong hands-on experience in software development using Java, SQL/PLSQL, Kotlin, and web technologies.
+                    <p>Gained strong hands-on experience in software development using Java, SQL/PLSQL, Kotlin, and web technologies.
                         <br> <br><strong>Key experience includes:</strong> </p>
                     <ul>
                       <li>Building web applications using Java EE (Servlets, JSP, EJB, JPA, JPQL)</li>
                       <li>Applying MVC architecture and software engineering principles</li>
                       <li>Working with databases such as Oracle, Apache Derby, and MySQL</li>
-                      <li>Developing Android apps using Kotlin in Android Studio</li>
                       <li>Designing user interfaces using HTML and CSS</li>
                       <li>Working with Linux (Ubuntu) for development and deployment tasks</li>
                     </ul>
-                    <P>Jan 2023 – Present </P>
+                    <P>Jan 2023 – 2025 </P>
                   </div>
 
                   <div class="experience-card">
