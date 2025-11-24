@@ -1,8 +1,15 @@
+/* Below I am importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+*{
+  font-family: "Unbounded", sans-serif;
+  font-weight: 0.5px;
+  font-style: normal;
+}
 
 body{
     background-color: #02080e;
     color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav{
@@ -151,8 +158,6 @@ nav{
 #skills{
     width: fit-content;
     height: fit-content;
-    
-    font-size: 20px;
     display: inline-flex;
     gap: 20px;
 }
@@ -160,6 +165,7 @@ nav{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    font-size: 2px;
 }
 
 #skillsLang span{
@@ -168,7 +174,7 @@ nav{
     width: fit-content;
     height: 30px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     border-style: solid;
     border-top-width: 0.5px;
     border-color: #fcfcfc2f;
@@ -187,21 +193,18 @@ nav{
   padding: 60px 20px;
   text-align: center;
   height: fit-content;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
 /*=== Below is the style for the slide ====*/
 .slider-container {
-  overflow: hidden; /* Hide slides that are off-screen */
-  position: relative;
-  width: 78%;
-  margin-left: 10%;
-  height: fit-content;
-}
-.nav-btn {
-  font-size: 30px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
+  max-width: 90%;
+  margin: 0 60px 35px;
+  padding: 20px 20px;
+  overflow: hidden; /* Here I am hidding the cards that have passed the scale os the slider */
 }
 .slider {
   display: flex;
@@ -212,13 +215,31 @@ nav{
 }
 .project-box {
   background-color: rgba(2, 2, 24, 0.377);
-  width: 450px; /* Use min-width instead of width */
-  flex-shrink: 0; /* Prevent slides from shrinking */
+  width: fit-content; /* Use min-width instead of width */
+  flex-shrink: 0;
   box-shadow: 3px 3px 2.4px 2.4px rgb(28, 14, 233);
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
   padding-bottom: 15px;
+  height: 400px;
 }
+
+.slider-container .swiper-pagination-bullet{
+   height: 13px;
+    width: 13px;   
+    opacity: 0.5;
+    background: #5372f0;
+}
+.slider-container .swiper-pagination-bullet-active{
+  opacity: 1;
+}
+
+.slider-container .wiper-slide-button{
+   color: #5372f0;
+    margin-top: -35px;
+}
+
+
 /*==== Slider style ends here =====*/
 
 .project-box:hover {

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQueries.css"/>
+    <!-- Bellow is the linking of Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+     <!-- Bellow I am linking SwiperJS CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/> 
     <title>Document</title>
 </head>
 <body>
@@ -99,77 +103,73 @@
             </section>
               <section id="projects">
                 <h1>My Projects</h1>
-                <div class="slider-container">
-                    <div class="slider">
-                      <div class="project-box">
-                        <div class="project-content">
-                          <h3>Weather-App</h3>
-                          <img src="media/projects/WeatherApp1.PNG" alt="">
-                          <p>This project lets you be able check weather in your current location. You can also enter <strong>City Name</strong>
-                            and the following languages were used... <strong>HTML5 CSS</strong> with <strong>Open Weather API</strong>.
-                          </p>
-                          <a href="https://weather-app-three-ochre-90.vercel.app/">🔗 View Project</a>
+                <div class="proMainContainer swiper">
+                    <div class="slider-container">
+                        <div class="slider swiper-wrapper">
+                          <div class="project-box swiper-slide">
+                            <div class="project-content">
+                              <h3>Weather-App</h3>
+                              <img src="media/projects/WeatherApp1.PNG" alt="">
+                              <p>This project lets you be able check weather in your current location. You can also enter <strong>City Name</strong>
+                                and the following languages were used... <strong>HTML5 CSS</strong> with <strong>Open Weather API</strong>.
+                              </p>
+                              <a href="https://weather-app-three-ochre-90.vercel.app/">🔗 View Project</a>
+                            </div>
+                          </div>
+                          <div class="project-box swiper-slide">
+                            <div class="project-content">
+                              <h3>Job Tracker App</h3>
+                              <img src="media/projects/JobTracker.PNG" alt="">
+                              <p>This project allows you to track your Job Applications so you can remember the jobs you applied for
+                                and the following languages were used... <strong>React TS</strong> with <strong>AppWrite</strong> for storing data.
+                              </p>
+                              <a href="https://job-tracker-application-rose.vercel.app/">🔗 View Project</a>
+                            </div>
+                          </div>
+                          <div class="project-box swiper-slide">
+                            <div class="project-content">
+                              <h3>WeatherApp React TS</h3>
+                              <img src="media/projects/WeatherAppTS.PNG" alt="">
+                              <p>This project allows you to track you weather in you location or by searching
+                                and the following languages were used... <strong>React TS</strong> with <strong>Open Weather API</strong>
+                              </p>
+                              <a href="https://job-tracker-application-84ru.vercel.app/">🔗 View Project</a>
+                            </div>
+                          </div>
+                          <div class="project-box swiper-slide">
+                            <div class="project-content">
+                              <h3>Converter Hub (Metrix)</h3>
+                              <img src="media/projects/ConvertorHub.PNG" alt="">
+                              <p>This project here allows users to convert between different Metrix values
+                                and the following languages were used... <strong>HTML,CSS and JavaScript</strong>
+                              </p>
+                              <a href="https://converter-hun-web.vercel.app/">🔗 View Project</a>
+                            </div>
+                          </div>
+                          <div class="project-box swiper-slide">
+                            <div class="project-content">
+                              <h3>Task Manager</h3>
+                              <img src="media/projects/todoList.PNG" alt="">
+                              <p>This project showcases my skils to only create an enteir website or WebPage
+                                only using JavaScript specially on UI/UX. Languages...<strong>JavaScript onway...</strong></p>
+                              <a href="https://task-manager-nu-olive-44.vercel.app/">🔗 View Project</a>
+                            </div>
+                          </div>
+                          <div class="project-box swiper-slide">
+                            <div class="project-content">
+                              <h3> Historical Events(Mini Article)</h3>
+                              <img src="media/projects/HistoricalEvents.PNG" alt="">
+                              <p>Just a small Webpage more of a Galary for Historical events <strong>HTML,CSS</strong></p>
+                              <a href="https://historical-events-article.vercel.app/">🔗 View Project</a>
+                            </div>
+                          </div>
+
                         </div>
-                      </div>
-
-                      <div class="project-box">
-                        <div class="project-content">
-                          <h3>Job Tracker App</h3>
-                          <img src="media/projects/JobTracker.PNG" alt="">
-                          <p>This project allows you to track your Job Applications so you can remember the jobs you applied for
-                            and the following languages were used... <strong>React TS</strong> with <strong>AppWrite</strong> for storing data.
-                          </p>
-                          <a href="https://job-tracker-application-rose.vercel.app/">🔗 View Project</a>
-                        </div>
-                      </div>
-
-                      <div class="project-box">
-                        <div class="project-content">
-                          <h3>WeatherApp React TS</h3>
-                          <img src="media/projects/WeatherAppTS.PNG" alt="">
-                          <p>This project allows you to track you weather in you location or by searching
-                            and the following languages were used... <strong>React TS</strong> with <strong>Open Weather API</strong>
-                          </p>
-                          <a href="https://job-tracker-application-84ru.vercel.app/">🔗 View Project</a>
-                        </div>
-                      </div>
-
-                      <div class="project-box">
-                        <div class="project-content">
-                          <h3>Converter Hub (Metrix)</h3>
-                          <img src="media/projects/ConvertorHub.PNG" alt="">
-                          <p>This project here allows users to convert between different Metrix values
-                            and the following languages were used... <strong>HTML,CSS and JavaScript</strong>
-                          </p>
-                          <a href="https://converter-hun-web.vercel.app/">🔗 View Project</a>
-                        </div>
-                      </div>
-
-
-                      <div class="project-box">
-                        <div class="project-content">
-                          <h3>Task Manager</h3>
-                          <img src="media/projects/todoList.PNG" alt="">
-                          <p>This project showcases my skils to only create an enteir website or WebPage
-                            only using JavaScript specially on UI/UX. Languages...<strong>JavaScript onway...</strong></p>
-                          <a href="https://task-manager-nu-olive-44.vercel.app/">🔗 View Project</a>
-                        </div>
-                      </div>
-
-
-                      <div class="project-box">
-                        <div class="project-content">
-                          <h3> Historical Events(Mini Article)</h3>
-                          <img src="media/projects/HistoricalEvents.PNG" alt="">
-                          <p>Just a small Webpage more of a Galary for Historical events <strong>HTML,CSS</strong></p>
-                          <a href="https://historical-events-article.vercel.app/">🔗 View Project</a>
-                        </div>
-                      </div>
-
+                        <div class="swiper-pagination"></div>
+                        <div class="wiper-slide-button swiper-button-prev"></div>
+                        <div class="wiper-slide-button swiper-button-next"></div>
                     </div>
-                    <br>
-                    <button id="prevBtn" class="nav-btn">◀</button>
-                   <button id="nextBtn" class="nav-btn">▶</button>
+                        
                 </div>
 
               </section>
@@ -221,6 +221,8 @@
     </div>
   </div>
 </footer>
+<!-- Linking SwiperJS script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> 
 
    <script src="theJavaScript.js"></script>
 
