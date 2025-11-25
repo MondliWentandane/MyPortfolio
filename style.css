@@ -380,7 +380,7 @@ footer {
 }
 
  /* Responsive  */
- @media (width < 1386px){
+ @media (width < 1246px){
   .homeGreetings{
     padding-left: 30px;
 
