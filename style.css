@@ -114,7 +114,8 @@ nav{
 /*==== End of the Home Section, starting the About Section*/
 
 .aboutSection{
-   display: inline-flex;
+   display: flex;
+   flex-direction: row;
    gap: 30px;
    width: 100%;
    height: 35rem;
@@ -380,8 +381,6 @@ footer {
 }
 
  /* Responsive  */
-
-
  @media (width < 1586px){
   .homeGreetings{
     padding-left: 30px;
@@ -411,7 +410,65 @@ footer {
 
 
  }
-@media (width < 860px){
+ @media (width < 900px){
+  .homeSection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 6%;
+    font-size: 20px;
+    #socials{
+      display: flex;
+      flex-direction: row;
+    }
+    #socials a img{
+      width: 120px;
+      height: 80px;
+    }
+  }
+  .aboutSection{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    span{
+      width: 800px;
+      border: none;
+    }
+    h3{
+      text-align: left;
+      padding-left: 2%;
+      padding-bottom: -3%;
+    }
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    #card{
+      width: 67%;
+    }
+    .card2{
+      margin: 0%;
+      width: 47%;
+      margin-left: 20%;
+    }
+    .card3{
+      margin: 0%;
+      width: 100px;
+      margin-left: 30%;
+    }
+  }
+  .project-content {
+    img{
+    width: 290px;
+    height: 200px;
+    border-radius: 20px;
+}
+  }
+
+
+ }
+@media (width < 700px){
   
 .nav-links{
   position: fixed;
