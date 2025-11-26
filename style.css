@@ -175,6 +175,7 @@ nav{
     border-top-width: 1px;
     border-color: #fcfcfc2f;
     backdrop-filter: blur(8px);
+    padding-bottom: 2%;
 }
 .card2{
     margin-top: 140px;
@@ -196,22 +197,17 @@ nav{
 }
 #skillsLang{
     display: flex;
-    gap: 20px;
+    gap: 5px;
     flex-wrap: wrap;
     font-size: 2px;
+
 }
 
 #skillsLang span{
-    background-color: rgb(2, 4, 20);
-    text-align: center;
+    align-items: center;
     width: fit-content;
     height: 30px;
-    border-radius: 80px;
     font-size: 17px;
-    border-style: solid;
-    border-top-width: 0.5px;
-    border-color: #fcfcfc2f;
-    padding: 0px 2px 0px 10px;
 
 }
 #skill img{
@@ -237,12 +233,12 @@ nav{
   max-width: 90%;
   margin: 0 60px 35px;
   padding: 20px 20px;
-  overflow: hidden; /* Here I am hidding the cards that have passed the scale os the slider */
+  overflow: hidden; 
 }
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 3%; /* Add spacing between slides */
+  gap: 3%;
   padding-top: 8%;
   padding-left: 3%;
 }
@@ -297,7 +293,7 @@ nav{
       border-width: 4px;
 }
 img{
-    width: 300px;
+    width: 60%;
     height: 220px;
     border-radius: 20px;
 }
@@ -327,7 +323,7 @@ img{
 
 .experience-card {
   background: #0057b300;
-  width: 700px;
+  width: 40%;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 5px 5px 5px 4px black;
@@ -383,7 +379,7 @@ footer {
  /* Responsive  */
  @media (width < 1586px){
   .homeGreetings{
-    padding-left: 30px;
+    padding-left: 5%;
 
   }
   .aboutSection{
@@ -410,6 +406,50 @@ footer {
 
 
  }
+  @media (width < 1300px){
+    .project-box {
+      height: 300px;
+    }
+    .project-content {
+      font-size: 14px;
+    img{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+}
+  }
+  }
+@media (width < 1111px){
+  .project-content {
+      font-size: 14px;
+    img{
+    width: 220px;
+    height: 150px;
+    border-radius: 20px;
+}
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    #card{
+      width: 47%;
+    }
+    .card2{
+      margin: 0%;
+      width: 47%;
+      margin-left: 20%;
+    }
+    .card3{
+      margin: 0%;
+      width: 90px;
+      margin-left: 45%;
+    }
+  }
+
+
+}
+
  @media (width < 900px){
   .homeSection{
     display: flex;
@@ -429,9 +469,13 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding-right: 10%;
+    font-size: 15px;
+    width: 90%;
     span{
-      width: 800px;
+      width: 95%;
       border: none;
+
     }
     h3{
       text-align: left;
@@ -454,13 +498,13 @@ footer {
     }
     .card3{
       margin: 0%;
-      width: 100px;
+      width: 90px;
       margin-left: 30%;
     }
   }
   .project-content {
     img{
-    width: 290px;
+    width: 80%;
     height: 200px;
     border-radius: 20px;
 }
@@ -520,4 +564,13 @@ footer {
   'GRAD' 0,
   'opsz' 24
 }
+}
+
+@media (width < 638px){
+  .cards{
+    margin-top: 40%;
+  }
+  #skills{
+    padding-top: 40px;
+  }
 }
