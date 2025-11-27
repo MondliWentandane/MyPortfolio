@@ -355,10 +355,10 @@ footer {
   font-size: 14px;
   text-align: center;
   margin-top: 30px;
+  width: 100%;
 }
 
 .footer-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -571,7 +571,7 @@ footer {
 
 @media (width < 438px){
   .cards{
-    margin-top: 40%;
+    margin-top: 0%;
   }
   #skills{
     padding-top: 40px;
@@ -639,6 +639,25 @@ margin-right: 10px;
   height: fit-content;
 }
 
+#skill img{
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    border-radius: 17px;
+}
 
+main h1{
+ font-size: 20px;
+}
 
+}
+
+@media (width < 378px){
+  .homeGreetings{
+    padding-inline: 3%;
+    font-size: 17px;
+  }
+  nav{
+    width: 100%;
+  }
 }
