@@ -13,6 +13,7 @@ html{
 body{
     background-color: #02080e;
     color: aliceblue;
+    width: 100%;
 }
 
 nav{
@@ -25,6 +26,7 @@ nav{
   border-bottom-left-radius: 30px;
   position: fixed;
   top: 0;
+  left: 0;
 }
 
 .flex{
@@ -173,7 +175,7 @@ nav{
     border-right-width: 1px;
     border-top-style: solid;
     border-top-width: 1px;
-    border-color: #fcfcfc2f;
+    border-color: #fcfcfc85;
     backdrop-filter: blur(8px);
     padding-bottom: 2%;
 }
@@ -507,7 +509,7 @@ footer {
     width: 80%;
     height: 200px;
     border-radius: 20px;
-}
+    }
   }
 
 
@@ -517,17 +519,18 @@ footer {
 .nav-links{
   position: fixed;
   left: -300px;       /* Hide menu initially */
-  top: 0;
+  top: -15px;
   height: fit-content;
-  width: 250px;
+  width: 160px;
   padding: 40px 20px;
-  background: #222;
+  background: #000000c5;
   display: flex;
   flex-direction: column;
   gap: 20px;
   transition: left 0.3s ease;
   z-index: 1500;
   transition: all 0.4s ease;
+  border-bottom-right-radius: 20px;
   
 }
 #menu-toggler:checked + #hamburger-btn + .nav-links {
@@ -540,7 +543,7 @@ footer {
 
 .nav-links a{
   font-size: 10;
-  color: #d7dafb;
+  color: #dfe0f0;
 }
 
 #hamburger-btn{
@@ -566,11 +569,76 @@ footer {
 }
 }
 
-@media (width < 638px){
+@media (width < 438px){
   .cards{
     margin-top: 40%;
   }
   #skills{
     padding-top: 40px;
   }
+  #skillsLang span{
+    font-size: 14px;
+  }
+  .cards #card{  /* Changed from just #card */
+    width: 95%;
+    
+  }
+  .cards .card2{
+    margin: 0%;
+  }
+  .cards .card3{
+    margin: 0%;
+  }
+
+
+  .project-box {
+    width: 200px;
+  }
+  .project-content{
+    font-size: small;
+    font-style: normal;
+    padding: 10px;
+    img{
+    width: 200px;
+    height: 160px;
+    border-radius: 20px;
+    }
+
+  }
+  .slider-container {
+  max-width: 95%;
+  margin: 0 40px 35px;
+  padding: 10px 10px;
+  overflow: hidden; 
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 3%;
+  padding-top: 11%;
+  padding-left: 3%;
+}
+.slider-container .wiper-slide-button{
+  height: 7%;
+}
+
+#experience{
+padding: 20px 10px;
+margin-right: 10px;
+  h2{
+    font-size: 30px;
+  }
+  .experience-card{
+    width: 95%;
+    padding-left: 1%;
+    font-size: 15px;
+  }
+}
+
+.aboutSection{
+  height: fit-content;
+}
+
+
+
 }
