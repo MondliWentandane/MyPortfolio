@@ -12,6 +12,7 @@
      <!-- Bellow I am linking SwiperJS CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/> 
     <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
           <nav>
@@ -238,21 +239,24 @@
                   <h2>Email Me....</h2>
                   <div class="form">
                     <label for="name">
-                          <input type="text" id="name" name="name" placeholder="Name...">
+                      <input type="text" id="name" name="name" placeholder="Name...">
                     </label><br>
                     <label for="email address">
-                          <input type="email" id="name" name="name" placeholder="Email Address...">
+                      <input type="email" id="email" name="name" placeholder="Email Address...">
                     </label><br>
                     <label for="phone No">
-                          <input type="number" id="name" name="name" placeholder="Phone No...">
+                      <input type="number" id="phoneNo" name="name" placeholder="Phone No...">
                     </label><br>
                     <label for="message">
-                          <textarea name="message" id="message" placeholder="Message..."></textarea>
-                    </label>
+                      <textarea name="message" id="message" placeholder="Message..."></textarea>
+                    </label><br>
+                    <!-- NEW SUBMIT BUTTON -->
+                    <button type="button" id="submitBtn" >
+                      Send Message
+                    </button>
                   </div>
                 </div>
               </section>
-
         </main>
 
 <footer>

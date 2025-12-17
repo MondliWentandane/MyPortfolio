@@ -37,6 +37,16 @@
      label{
         padding-left: 1%;
      }
+     #submitBtn{
+        padding: 10px 20px;
+        margin-left: 1%; 
+        background-color: #d1ebd2;
+        color: rgb(0, 0, 0); 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 16px;
+     }
 
     }
 }
