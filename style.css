@@ -13,7 +13,11 @@ html{
 body{
     background-color: #02080e;
     color: aliceblue;
+    margin: 0;
+    padding: 0;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 nav{
@@ -254,9 +258,9 @@ nav{
   background-color: rgba(2, 2, 24, 0.377);
   width: fit-content; /* Use min-width instead of width */
   flex-shrink: 0;
-  box-shadow: 3px 3px 2.4px 2.4px rgb(28, 14, 233);
+  box-shadow: 0.3px 0.3px 1px 1px rgb(28, 14, 233);
   border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 2s, box-shadow 2s;
   padding-bottom: 15px;
   height: 400px;
 }
@@ -280,11 +284,14 @@ nav{
 /*==== Slider style ends here =====*/
 
 .project-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  background-color: rgba(3, 3, 39, 0.418);
+  width: fit-content; /* Use min-width instead of width */
+  box-shadow: 1.3px 1.3px 2px 2px rgb(28, 14, 233);
+  border-radius: 15px;
+  transition: transform 2s, box-shadow 2s;
 }
 .project-content {
-  padding: 25px;
+  padding: 4%;
   color: #222;
   font-size: 20px;
   text-align: center;
@@ -301,7 +308,7 @@ nav{
       border-width: 4px;
 }
 img{
-    width: 60%;
+    width: 95%;
     height: 220px;
     border-radius: 20px;
 }
