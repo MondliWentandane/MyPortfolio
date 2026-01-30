@@ -13,6 +13,17 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/> 
     <title>Document</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!--  === Testing Bellow ====-->
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "TBC8V94Uh-NUzRO0t",
+            });
+        })();
+      </script>
 </head>
 <body>
           <nav>
@@ -241,15 +252,15 @@
                     <label for="name">
                       <input type="text" id="name" name="name" placeholder="Name...">
                     </label><br>
-                    <label for="email address">
+                    <label for="email">
                       <input type="email" id="email" name="name" placeholder="Email Address...">
                     </label><br>
-                    <label for="phone No">
-                      <input type="number" id="phoneNo" name="name" placeholder="Phone No...">
+                    <label for="phoneNo">
+                      <input type="text" id="phoneNo" name="name" placeholder="Phone No...">
                     </label><br>
                     <label for="message">
                       <textarea name="message" id="message" placeholder="Message..."></textarea>
-                    </label><br>
+                    </label> <br>
                     <!-- NEW SUBMIT BUTTON -->
                     <button type="button" id="submitBtn" >
                       Send Message

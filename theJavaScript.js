@@ -28,23 +28,18 @@ const swiper = new Swiper('.slider-container', {
 });
 
 // ==== EMAIL FUNCTIONALITY USING EMAILJS ====
-
-// Initialize EmailJS with your Public Key
-emailjs.init("TBC8V94Uh-NUzRO0t"); // Replace with your actual public key from EmailJS
-
-// Function to send email
 function sendEmail(event) {
   event.preventDefault(); // Prevent form from refreshing page
 
   // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phoneNo = document.getElementById('phoneNo').value;
-  const message = document.getElementById('message').value;
+  const theName = document.getElementById('name').value;
+  const theEmail = document.getElementById('email').value;
+  const thePhone = document.getElementById('phoneNo').value;
+  const theMessage = document.getElementById('message').value;
 
   // Validate fields
-  if (!name || !email || !message) {
-    alert('Please fill in Name, Email, and Message fields');
+  if (!theName || !theEmail || !theMessage) {
+    alert('Please fill in Name, Email, and Message fields (REQUIRED)');
     return;
   }
 
@@ -56,14 +51,14 @@ function sendEmail(event) {
 
   // Prepare email parameters
   const templateParams = {
-    from_name: name,
-    from_email: email,
-    phone_number: phoneNo || 'Not provided',
-    message: message,
+    name: theName,
+    email: theEmail,
+    cellNo: thePhone || 'Not provided',
+    message: theMessage,
   };
 
   // Send email using EmailJS
-  emailjs.send('service_lzcdzk3', 'template_g8ctvb4', templateParams)
+  emailjs.send('service_6pki1rn', 'template_gp6ekt5', templateParams)
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
       alert('Message sent successfully! I will get back to you soon.');
