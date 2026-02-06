@@ -27,7 +27,7 @@
      border-bottom-width: 1px;
      border-color: white;
      color: white;
-     background: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0);
      outline: none;
      }
      textarea{
@@ -39,7 +39,7 @@
         border-width: 1px;
         border-color: white;
         color: white;
-     background: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0);
      }
      label{
         padding-left: 1%;
