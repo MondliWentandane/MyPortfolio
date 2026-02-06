@@ -29,25 +29,6 @@ const swiper = new Swiper('.slider-container', {
 
 //  ===== BELOW IS FOR THE SLIDER  ======
 
-import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+esm";
-
-const projectBoxes = document.querySelectorAll(".box");
-
-// Animate projects horizontally during vertical scroll
-scroll(
-  animate(".projects-group", {
-    transform: ["none", `translateX(-${(projectBoxes.length - 1) * 39}%)`],
-  }),
-  { target: document.querySelector(".projects-scroll-container") }
-);
-
-// Progress bar representing gallery scroll
-scroll(animate(".progress", { scaleX: [0, 1] }), {
-  target: document.querySelector(".projects-scroll-container"),
-});
-
-
-
 
 
 // ==== EMAIL FUNCTIONALITY USING EMAILJS ====
