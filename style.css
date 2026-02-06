@@ -4,8 +4,7 @@
 *{
   font-family: "Capriola", sans-serif;
   font-style: normal;
-  font-weight: bold;
-
+  font-weight: normal;
 }
 html{
   scroll-behavior: smooth;
@@ -412,12 +411,12 @@ footer {
     font-size: 15px;
     padding-top: 8px;
   }
-  .project-content{
-    font-size: 17px;
-    img{
-      height: 200px;
-    }
+
+  .box{
+    width: 31%;
   }
+
+
   .experience-card {
     width: 40%;
     font-size: 16px;
