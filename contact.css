@@ -9,7 +9,7 @@
     width: 45%;
     height: fit-content;
     padding: 3%;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
      #submitBtn{
         padding: 10px 20px;
         margin-left: 1%; 
-        background-color: #d1ebd2;
+        background-color: #ffffff;
         color: rgb(0, 0, 0); 
         border: none; 
         border-radius: 5px; 
