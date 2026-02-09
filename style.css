@@ -31,21 +31,11 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-
-  
-
-}
-.nav-cube {
-  height: 90px;
-  width: 90px;
-  display: block;
-  margin-left: 2%;
 }
 
 .flex{
   display: flex;
   flex-direction: row;
-  margin-right: 7%;
 }
 
 .nav-links{
@@ -54,7 +44,6 @@ nav{
   flex-direction: row;
   gap: 5%;
   padding-top: 2%;
-  
 
   a{
     color: #717fff;
@@ -241,9 +230,9 @@ nav{
     font-size: 17px;
 
 }
-#skill img{
-    width: 200px;
-    height: 230px;
+#skill .cube{
+    width: 320px;
+    height: 200px;
     margin-left: 20px;
     border-radius: 17px;
 }
@@ -631,8 +620,8 @@ footer {
 @media (width < 478px){
 
   .homeSection #socials a img{
-    width: 48px;
-    height: 50px;;
+    width: 38px;
+    height: 40px;;
   }
   .homeSection #socials{
     gap: 12%;

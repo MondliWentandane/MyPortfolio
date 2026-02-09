@@ -27,7 +27,7 @@
 </head>
 <body>
           <nav>
-            <div class="nav-cube" id="imgD" data-image="media/java.png"></div>
+            <img src="media/java.png" alt="java" id="imgD">
               <div class="container flex">
                 <input type="checkbox" id="menu-toggler"/>
                 <label for="menu-toggler" id="hamburger-btn">
@@ -41,6 +41,7 @@
                   <li><a href="#experience">Experience</a></li>
                 </ul>
               </div>
+            <img src="media/python.png" alt="python" id="imgD" class="ppy">
           </nav>
         <section class="homeSection" id="home">
             <div class="homeGreetings">
@@ -105,7 +106,7 @@
                           <h2>Frontend</h2>
                           <hr class="theHR">
                           <div id="skill">
-                              <img src="media/skill1.png" alt="">
+                              <div class="cube" id="imgD" data-image="media/skill1.png"></div>
                               <div id="skillsLang">
                                 <span>UI/UX Design (Figma)</span><span>HTML</span> <span>CSS</span><span>JavaScript</span>
                                 <span>TypeScript</span><span>React (Vite)</span><span>React Native (Expo)</span><span>Redux</span>
@@ -116,7 +117,7 @@
                           <h2>Backend</h2>
                           <hr class="theHR">
                           <div id="skill">
-                              <img src="media/skill2.jpeg" alt="">
+                              <div class="cube" id="imgD" data-image="media/skill2.jpeg"></div>
                               <div id="skillsLang">
                                 <span>Java</span> <span style="padding-bottom: 10px;">Java EE (Servlets, JSP, EJB, JPA, JPQL)</span>
                                 <span>REST APIs</span><span>JavaScript</span><span>Git & GitHub</span>
@@ -128,7 +129,7 @@
                           <h2>Database</h2>
                           <hr class="theHR">
                           <div id="skill">
-                              <img src="media/skill3.jpg" alt="">
+                              <div class="cube" id="imgD" data-image="media/skill3.jpg"></div>
                               <div id="skillsLang">
                                 <span>SQL</span> <span>PL/SQL</span><span style="padding-bottom: 10px;">Oracle DB</span>
                                 <span style="padding-bottom: 10px;">Apache Derby</span><span>MySQL</span>
@@ -262,7 +263,7 @@
 <!--=== Another animation Script ===== -->
 
 <script type="module">
-    import * as THREE from "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js"
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js"
 import { animate, frame } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+esm"
 
 function rad(degrees) {
@@ -273,9 +274,9 @@ function rad(degrees) {
 function createSpinningCube(container, imagePath) {
     const scene = new THREE.Scene({ alpha: true })
     const camera = new THREE.PerspectiveCamera(
-        15,
+        19,
         container.offsetWidth / container.offsetHeight,
-        0.1,
+        0.4,
         1000
     )
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -314,7 +315,7 @@ const light = new THREE.AmbientLight(0xffffff, 0.6)
 }
 
 // Initialize all cubes (nav logos + social icons)
-document.querySelectorAll('.nav-cube, .boxa').forEach(container => {
+document.querySelectorAll('.cube').forEach(container => {
     const imagePath = container.dataset.image
     if (imagePath) {
         createSpinningCube(container, imagePath)
