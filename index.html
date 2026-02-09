@@ -60,10 +60,10 @@
               </p>
             </div>
             <div id = "socials">
-              <a href="https://github.com/MondliWentandane"><img src="media/socialIcons/githubIcon.png" alt="" style="border-radius: 8%;"></a>
-              <a href="https://www.instagram.com/m0ndli_khoza/"><img src="media/socialIcons/instaGIcon.png" alt=""></a>
-              <a href="https://www.facebook.com/mondli.khoza.7509"><img src="media/socialIcons/fcbkIcon.png" alt=""></a>
-              <a href="https://www.linkedin.com/in/mondli-khoza-aa673436a/"><img src="media/socialIcons/linkedInIcon.png" alt="" ></a>      
+              <a href="https://github.com/MondliWentandane"><img src="media/socialIcons/githubIcon.png" alt="" style="border-radius: 8%;" class="boxa"></a>
+              <a href="https://www.instagram.com/m0ndli_khoza/"><img src="media/socialIcons/instaGIcon.png" alt="" class="boxa"></a>
+              <a href="https://www.facebook.com/mondli.khoza.7509"><img src="media/socialIcons/fcbkIcon.png" alt="" class="boxa"></a>
+              <a href="https://www.linkedin.com/in/mondli-khoza-aa673436a/"><img src="media/socialIcons/linkedInIcon.png" alt="" class="boxa" ></a>      
                   
             </div>      
         </section>
@@ -254,6 +254,11 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> 
 
    <script src="theJavaScript.js"></script>
+   <script type="module">
+    import { animate } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+esm"
+
+    animate(".boxa", { rotate: 360 }, { duration: 1 })
+  </script>
 
 
 </body>

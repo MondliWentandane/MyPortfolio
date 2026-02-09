@@ -95,9 +95,10 @@ nav{
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
 
+}
+.homeGreetings{
+  margin-left: 2%;
 }
 
 
@@ -124,8 +125,11 @@ nav{
         box-shadow: 3px 3px 3px #ffffffa2;
        
     }
-    img:hover{
-
+    .boxa {
+        width: 100px;
+        height: 100px;
+        background-color: #9911ff;
+        border-radius: 10px;
     }
     a{
         width: fit-content;
@@ -552,6 +556,11 @@ footer {
     height: 185px;
   }
 
+  .experience-container {
+    margin-left: 0;  /* Remove the 8% margin */
+    padding: 0 10px; /* Add padding instead */
+  }
+
 
  }
 @media (width < 700px){
@@ -606,6 +615,11 @@ footer {
   'GRAD' 0,
   'opsz' 24
 }
+
+.proMainContainer{
+    gap: 20px;  /* Reduce gap from 87px */
+  }
+
 }
 
 @media (width < 478px){
@@ -616,13 +630,15 @@ footer {
   }
   .homeSection #socials{
     gap: 12%;
-    width: 55%;
+    width: 100%;  /* Change from 55% to 100% */
+    justify-content: center;
   }
 
 
 
   .cards{
     margin-top: 0%;
+    padding-inline: 5px
   }
   #skills{
     padding-top: 40px;
@@ -649,6 +665,7 @@ footer {
 .proMainContainer{
   width: 100%;
   padding: 0%;
+  gap: 15px;
 }
 
 .box{
