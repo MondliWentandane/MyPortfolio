@@ -230,9 +230,9 @@ nav{
     font-size: 17px;
 
 }
-#skill .cube{
-    width: 320px;
-    height: 200px;
+#skill img{
+    width: 200px;
+    height: 230px;
     margin-left: 20px;
     border-radius: 17px;
 }
