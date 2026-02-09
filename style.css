@@ -616,6 +616,7 @@ footer {
   }
   .homeSection #socials{
     gap: 12%;
+    width: 55%;
   }
 
 
