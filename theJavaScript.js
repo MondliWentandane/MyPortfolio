@@ -65,7 +65,7 @@ function sendEmail(event) {
   emailjs.send('service_6pki1rn', 'template_gp6ekt5', templateParams)
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
-      alert('Message sent successfully! I will get back to you soon.');
+      showNotification('Message sent successfully!');
       
       // Clear form
       document.getElementById('name').value = '';
@@ -78,7 +78,7 @@ function sendEmail(event) {
       submitBtn.disabled = false;
     }, function(error) {
       console.error('FAILED...', error);
-      alert('Failed to send message. Please try again or email me directly at mondli46401@gmail.com');
+      showNotification('Failed to send message. Please try again or email me directly at mondli46401@gmail.com', true);
       
       // Reset button
       submitBtn.textContent = originalText;
@@ -91,5 +91,66 @@ document.addEventListener('DOMContentLoaded', function() {
   const submitBtn = document.getElementById('submitBtn');
   if (submitBtn) {
     submitBtn.addEventListener('click', sendEmail);
+  }
+});
+
+
+//===== Bellow is the Notification funnctions =======
+
+// Notification System Functions
+function showNotification(message, isError = false) {
+  const notification = document.getElementById('notification');
+  const messageElement = notification.querySelector('.notification-message');
+  
+  // Set message
+  messageElement.textContent = message;
+  
+  // Set type (success or error)
+  if (isError) {
+    notification.classList.add('error');
+  } else {
+    notification.classList.remove('error');
+  }
+  
+  // Show notification with animation
+  notification.style.display = 'flex';
+  notification.style.animation = 'slideIn 0.3s ease-out';
+  
+  // Auto-hide after 5 seconds (for success messages only)
+  if (!isError) {
+    setTimeout(() => {
+      hideNotification();
+    }, 5000);
+  }
+}
+
+function hideNotification() {
+  const notification = document.getElementById('notification');
+  
+  // Add slide-out animation
+  notification.style.animation = 'slideOut 0.3s ease-out';
+  
+  // Hide after animation completes
+  setTimeout(() => {
+    notification.style.display = 'none';
+    notification.style.animation = '';
+  }, 300);
+}
+
+// Close notification when X button is clicked
+document.addEventListener('DOMContentLoaded', function() {
+  const closeBtn = document.querySelector('.notification-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', hideNotification);
+  }
+  
+  // Also close notification when clicking outside (optional)
+  const notification = document.getElementById('notification');
+  if (notification) {
+    notification.addEventListener('click', function(e) {
+      if (e.target === notification) {
+        hideNotification();
+      }
+    });
   }
 });
