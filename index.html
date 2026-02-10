@@ -44,18 +44,18 @@
             <img src="media/python.png" alt="python" id="imgD" class="ppy">
           </nav>
         <section class="homeSection" id="home">
-            <div class="homeGreetings">
-              <h1 style="font-weight: bold;">Hi, I'm Mondli Khoza (Software Developer)</h1>
-              <p style="font-weight: bold;">
+            <div class="homeGreetings theFirst">
+              <h1 style="font-weight: bold;" class="fl">Hi, I'm Mondli Khoza (Software Developer)</h1>
+              <p style="font-weight: bold;" class="fl">
                 A passionate <strong style="font-weight: bold;">Full-Stack Developer</strong> skilled  
                 in crafting clean, functional <strong style="font-weight: bold;">backends</strong> and 
                 building beautiful, responsive <strong style="font-weight: bold;">frontends</strong>.
             </p>
-              <p style="font-weight: bold;">
+              <p style="font-weight: bold;" class="fl">
                 Whether it's designing smooth user experiences or optimizing  
                 server-side logic, I love turning ideas into reality through code.
             </p>
-            <p style="font-weight: bold;">
+            <p style="font-weight: bold;" class="fl">
                 Let's build something amazing together, <span class="styleIt">Website/Mobile App</span>.
               </p>
             </div>
@@ -265,7 +265,8 @@
 <script type="module">
     import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+esm"
 
-    animate(".example a", { opacity: 1, y: [90, 0] }, { delay: stagger(0.12) })
+    animate(".example a", { opacity: 1, y: [90, 0] }, { delay: stagger(0.17) })
+    animate(".theFirst .fl", { opacity: 1, y: [90, 0] }, { delay: stagger(0.14) })
 </script>
 
 
